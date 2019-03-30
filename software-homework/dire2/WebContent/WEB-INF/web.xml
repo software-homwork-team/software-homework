@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Second</display-name>
+  
+     <filter>
+  	<filter-name>EncodingFilter</filter-name>
+  	<filter-class>com.filter.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>EncodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>DengluServlet</servlet-name>
+    <servlet-class>com.servlet.DengluServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ZhuceServlet</servlet-name>
+    <servlet-class>com.servlet.ZhuceServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Searchall</servlet-name>
+    <servlet-class>com.servlet.Searchall</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteServlet</servlet-name>
+    <servlet-class>com.servlet.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>com.servlet.UpdateServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  <servlet>
+    <servlet-name>Student_login_Servlet</servlet-name>
+    <servlet-class>com.servlet.Student_login_Servlet</servlet-class>
+  </servlet>
+
+<servlet-mapping>
+    <servlet-name>Student_login_Servlet</servlet-name>
+    <url-pattern>/Student_login_Servlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+   <servlet>
+    <servlet-name>Teacher_login_Servlet</servlet-name>
+    <servlet-class>com.servlet.Teacher_login_Servlet</servlet-class>
+  </servlet>
+
+<servlet-mapping>
+    <servlet-name>Teacher_login_Servlet</servlet-name>
+    <url-pattern>/Teacher_login_Servlet</url-pattern>
+  </servlet-mapping>
+  
+  
+    
+   <servlet>
+    <servlet-name>Student_Search_Servlet</servlet-name>
+    <servlet-class>com.servlet.Student_Search_Servlet</servlet-class>
+  </servlet>
+
+<servlet-mapping>
+    <servlet-name>Student_Search_Servlet</servlet-name>
+    <url-pattern>/Student_Search_Servlet</url-pattern>
+  </servlet-mapping>
+  
+
+
+
+ <servlet>
+    <servlet-name>Teacher_zhuce_Servlet</servlet-name>
+    <servlet-class>com.servlet.Teacher_zhuce_Servlet</servlet-class>
+  </servlet>
+
+<servlet-mapping>
+    <servlet-name>Teacher_zhuce_Servlet</servlet-name>
+    <url-pattern>/Teacher_zhuce_Servlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>Student_zhuce_Servlet</servlet-name>
+    <servlet-class>com.servlet.Student_zhuce_Servlet</servlet-class>
+  </servlet>
+
+<servlet-mapping>
+    <servlet-name>Student_zhuce_Servlet</servlet-name>
+    <url-pattern>/Student_zhuce_Servlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>Student_Submit_Servlet</servlet-name>
+    <servlet-class>com.servlet.Student_Submit_Servlet</servlet-class>
+  </servlet>
+
+<servlet-mapping>
+    <servlet-name>Student_Submit_Servlet</servlet-name>
+    <url-pattern>/Student_Submit_Servlet</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet-mapping>
+    <servlet-name>DengluServlet</servlet-name>
+    <url-pattern>/DengluServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ZhuceServlet</servlet-name>
+    <url-pattern>/ZhuceServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Searchall</servlet-name>
+    <url-pattern>/Searchall</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteServlet</servlet-name>
+    <url-pattern>/DeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/UpdateServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <welcome-file-list>
+    <welcome-file>denglu.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
